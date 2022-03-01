@@ -1,0 +1,40 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "seawinganimusdagger",
+    "customModelName": "swad:default",
+    "name": "Seawing Animus Dagger",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:WofWeapons"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100000,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": true,
+    "animation": "spear",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 10.0,
+    "onEntitySwing": {
+      "name": "SeawingAnimusDaggerEntitySwingsItem"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 9.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:SeawingAnimusDagger"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

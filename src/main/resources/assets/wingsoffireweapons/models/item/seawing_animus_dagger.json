@@ -1,0 +1,7 @@
+{
+  "parent": "wingsoffireweapons:custom/swad",
+  "textures": {
+    "0": "wingsoffireweapons:blocks/swad",
+    "particle": "wingsoffireweapons:items/seawinganimusdagger"
+  }
+}
