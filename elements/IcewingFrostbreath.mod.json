@@ -3,9 +3,9 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "rainwingshooterupdate",
+    "texture": "icewingfrostbreath",
     "customModelName": "Normal",
-    "name": "Rainwing Shooter",
+    "name": "Icewing Frostbreath",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:WofWeapons"
@@ -19,28 +19,28 @@
     "actionSound": {
       "value": "entity.arrow.shoot"
     },
-    "hasGlow": true,
-    "animation": "bow",
+    "hasGlow": false,
+    "animation": "drink",
     "enableMeleeDamage": false,
     "damageVsEntity": 7.0,
     "onRangedItemUsed": {
-      "name": "RainwingShooterRangedItemUsed"
+      "name": "IcewingFrostbreathRangedItemUsed"
     },
     "bulletPower": 1.0,
     "bulletDamage": 7.0,
     "bulletKnockback": 5,
-    "bulletParticles": false,
+    "bulletParticles": true,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "Blocks.WITHER_ROSE"
+      "value": "Items.SNOWBALL"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": "rainwingvenom.png",
+    "customBulletModelTexture": "",
     "onBulletHitsPlayer": {
-      "name": "RainwingShooterProjectileHitsLivingEntity"
+      "name": "IcewingFrostbreathProjectileHitsPlayer"
     },
     "onBulletHitsEntity": {
-      "name": "RainwingShooterProjectileHitsLivingEntity"
+      "name": "IcewingFrostbreathProjectileHitsPlayer"
     }
   }
 }

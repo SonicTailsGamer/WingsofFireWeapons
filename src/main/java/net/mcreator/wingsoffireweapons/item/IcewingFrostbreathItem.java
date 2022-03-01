@@ -1,9 +1,6 @@
 
 package net.mcreator.wingsoffireweapons.item;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.ItemStack;
@@ -16,13 +13,14 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.mcreator.wingsoffireweapons.procedures.IcewingFrostbreathRangedItemUsedProcedure;
 import net.mcreator.wingsoffireweapons.init.WingsoffireweaponsModTabs;
-import net.mcreator.wingsoffireweapons.entity.SeawingAnimusDaggerEntity;
+import net.mcreator.wingsoffireweapons.entity.IcewingFrostbreathEntity;
 
-public class SeawingAnimusDaggerItem extends Item {
-	public SeawingAnimusDaggerItem() {
+public class IcewingFrostbreathItem extends Item {
+	public IcewingFrostbreathItem() {
 		super(new Item.Properties().tab(WingsoffireweaponsModTabs.TAB_WOF_WEAPONS).durability(100000));
-		setRegistryName("seawing_animus_dagger");
+		setRegistryName("icewing_frostbreath");
 	}
 
 	@Override
@@ -33,18 +31,12 @@ public class SeawingAnimusDaggerItem extends Item {
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.SPEAR;
+		return UseAnim.DRINK;
 	}
 
 	@Override
 	public int getUseDuration(ItemStack itemstack) {
 		return 72000;
-	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
 	}
 
 	@Override
@@ -54,9 +46,11 @@ public class SeawingAnimusDaggerItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				SeawingAnimusDaggerEntity entityarrow = SeawingAnimusDaggerEntity.shoot(world, entity, world.getRandom(), 1f, 9, 5);
+				IcewingFrostbreathEntity entityarrow = IcewingFrostbreathEntity.shoot(world, entity, world.getRandom(), 1f, 7, 5);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
+
+				IcewingFrostbreathRangedItemUsedProcedure.execute(world, entity);
 			}
 		}
 	}

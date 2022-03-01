@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "wingsoffireweapons:items/rainwingshooterupdate"
+    "layer0": "wingsoffireweapons:items/icewingfrostbreath"
   },
   "display": {
     "thirdperson_righthand": {

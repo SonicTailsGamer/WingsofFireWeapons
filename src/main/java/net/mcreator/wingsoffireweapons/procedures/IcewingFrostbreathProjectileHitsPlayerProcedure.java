@@ -5,13 +5,13 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 
-public class DragonTribesWingsProcedure {
+public class IcewingFrostbreathProjectileHitsPlayerProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		entity.setDeltaMovement((Math.sin(Math.toRadians(entity.getYRot() + 180)) * 0.5), (entity.getXRot() * (-0.025)),
-				(Math.cos(Math.toRadians(entity.getYRot())) * 0.5));
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 200, 1));
+			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 255, (false), (false)));
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 1, (false), (false)));
 	}
 }

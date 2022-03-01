@@ -17,22 +17,6 @@
       }
     },
     {
-      "name": "MudwingSwordToolInHandTick",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mudwing_sword_tool_in_hand_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "MudwingSword",
       "type": "tool",
       "sortid": 1,
@@ -55,38 +39,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "seawing_animus_dagger"
-    },
-    {
-      "name": "SeawingAnimusDaggerEntitySwingsItem",
-      "type": "procedure",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "seawing_animus_dagger_entity_swings_item",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SandwingBladeToolInHandTick",
-      "type": "procedure",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sandwing_blade_tool_in_hand_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
     },
     {
       "name": "SandwingBladeLivingEntityIsHitWithTool",
@@ -129,58 +81,6 @@
       }
     },
     {
-      "name": "IcewingInvisibility",
-      "type": "item",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "icewing_invisibility"
-    },
-    {
-      "name": "RainwingShooterProjectileHitsLivingEntity",
-      "type": "procedure",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rainwing_shooter_projectile_hits_living_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "RainwingShooterRangedItemUsed",
-      "type": "procedure",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rainwing_shooter_ranged_item_used",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "RainwingShooter",
-      "type": "rangeditem",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rainwing_shooter"
-    },
-    {
       "name": "DragonTribesWings",
       "type": "procedure",
       "sortid": 14,
@@ -195,6 +95,58 @@
           }
         ]
       }
+    },
+    {
+      "name": "RainwingInvisibility",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainwing_invisibility"
+    },
+    {
+      "name": "IcewingFrostbreathProjectileHitsPlayer",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icewing_frostbreath_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IcewingFrostbreathRangedItemUsed",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icewing_frostbreath_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IcewingFrostbreath",
+      "type": "rangeditem",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icewing_frostbreath"
     }
   ],
   "variable_elements": [],
@@ -202,11 +154,11 @@
   "language_map": {
     "en_us": {
       "item.wingsoffireweapons.sandwing_blade": "Sandwing Blade",
+      "item.wingsoffireweapons.rainwing_invisibility": "Rainwing Invisibility",
       "item.wingsoffireweapons.mudwing_sword": "Mudwing Sword",
-      "item.wingsoffireweapons.rainwing_shooter": "Rainwing Shooter",
       "item.wingsoffireweapons.seawing_animus_dagger": "Seawing Animus Dagger",
-      "item.wingsoffireweapons.icewing_invisibility": "Icewing Invisibility",
-      "itemGroup.tabwof_weapons": "Wof Weapons"
+      "itemGroup.tabwof_weapons": "Wof Weapons",
+      "item.wingsoffireweapons.icewing_frostbreath": "Icewing Frostbreath"
     }
   },
   "foldersRoot": {
@@ -226,7 +178,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.16.5",
+    "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.wingsoffireweapons",
     "lockBaseModFiles": false
   },

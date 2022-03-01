@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "icewinginvinisibility",
+    "texture": "rainwinginvisible",
     "customModelName": "Normal",
-    "name": "Icewing Invisibility",
+    "name": "Rainwing Invisibility",
     "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:WofWeapons"
@@ -19,7 +19,7 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,

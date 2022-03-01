@@ -23,9 +23,6 @@
     "animation": "spear",
     "enableMeleeDamage": false,
     "damageVsEntity": 10.0,
-    "onEntitySwing": {
-      "name": "SeawingAnimusDaggerEntitySwingsItem"
-    },
     "bulletPower": 1.0,
     "bulletDamage": 9.0,
     "bulletKnockback": 5,
